@@ -19,9 +19,3 @@ print content + "\n\n"
 f.close()
 
 print ">> Obtendo informacoes sobre o versionamento do arquivo ...\n\n"
-fileInfo = subprocess.check_output("svn info \"" + os.getcwd() + "\info.txt\"")
-print fileInfo + "\n"
-
-p = open("password.txt",'r')
-password = p.read()
-p.close()
