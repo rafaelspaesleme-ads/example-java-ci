@@ -24,8 +24,4 @@ print fileInfo + "\n"
 
 p = open("password.txt",'r')
 password = p.read()
-p.close() 
-
-print ">> Log do SVN:\n\n"
-logSVN = subprocess.check_output("svn log \"" + os.getcwd() + "\info.txt\" --username rafaelspaesleme-ads --password " + password)
-print logSVN + "\n\n"
+p.close()
